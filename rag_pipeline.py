@@ -52,8 +52,8 @@ LLM_MODEL_ID        = "qwen2.5:3b-instruct"
 ICD10_TXT_PATH      = "./kb/icd10_structured.txt"
 
 # ── Chunking KB ────────────────────────────────────────────────
-CHUNK_SIZE          = 512
-CHUNK_OVERLAP       = 128
+CHUNK_SIZE          = 256
+CHUNK_OVERLAP       = 0
 
 # ── Chunking ICD-10 ────────────────────────────────────────────
 ICD10_CHUNK_SIZE    = 100
@@ -455,7 +455,7 @@ if __name__ == "__main__":
 
     # !! PENTING: set True setiap kali kamu mengubah KB atau parameter chunking
     # Set False setelah rebuild pertama agar tidak rebuild ulang setiap run
-    FORCE_REBUILD_INDEX = True
+    FORCE_REBUILD_INDEX = False
     SHOW_KB_DOCS        = True
     PREVIEW_LEN         = 300   # dinaikkan agar chunk yang lebih besar terbaca
 
