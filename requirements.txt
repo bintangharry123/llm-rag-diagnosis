@@ -28,6 +28,6 @@ streamlit==1.45.0
 
 # Utilitas
 python-dotenv==1.1.0
-angchain-ollama
+langchain-ollama
 langchain-community 
 langchain-core
