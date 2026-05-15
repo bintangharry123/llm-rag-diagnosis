@@ -1,33 +1,32 @@
-# ─────────────────────────────────────────────
-# Install: pip install -r requirements.txt
-# Jika masih error, install manual dulu:
-#   pip uninstall langchain langchain-core langchain-community langchain-huggingface langchain-text-splitters -y
-#   pip install -r requirements.txt
-# ─────────────────────────────────────────────
-
-# Inti LangChain (versi harus sinkron)
+# Core RAG Pipeline
 langchain==0.3.25
-langchain-core==0.3.55
-langchain-community==0.3.24
-langchain-text-splitters==0.3.8
-langchain-huggingface==0.2.0
+langchain-community==0.3.23
+langchain-huggingface==0.1.2
+langchain-ollama==0.3.2
 
-# HuggingFace
-huggingface-hub==0.30.2
-transformers==4.51.3
+# Vector Store
+faiss-cpu==1.9.0
+
+# Embedding Model
 sentence-transformers==3.4.1
 
-# Vector store
-faiss-cpu==1.10.0
+# PDF Processing
+pymupdf==1.25.5
 
-# PDF loader
-PyMuPDF==1.25.5
+# LLM Interface
+ollama==0.4.7
 
-# Frontend
-streamlit==1.45.0
+# Fuzzy Matching (ICD-10 validator)
+rapidfuzz==3.12.2
 
-# Utilitas
-python-dotenv==1.1.0
-langchain-ollama
-langchain-community 
-langchain-core
+# Web Interface
+streamlit==1.44.1
+
+# Data Processing & Visualization
+pandas==2.2.3
+numpy==1.26.4
+matplotlib==3.10.1
+openpyxl==3.1.5
+
+# Evaluation (RAGAS)
+ragas==0.2.15
