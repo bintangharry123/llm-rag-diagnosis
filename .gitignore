@@ -1,0 +1,16 @@
+# Mengabaikan file environment (SANGAT PENTING!)
+.env
+
+# Mengabaikan folder virtual environment Python
+venv/
+env/
+
+# Mengabaikan folder database vector (FAISS) agar tidak berat
+vector_store/
+kb/
+kb/knowledge_base/
+
+# Mengabaikan file cache Python
+__pycache__/
+*.pyc
+*.pdf

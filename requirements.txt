@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────
+# Install: pip install -r requirements.txt
+# Jika masih error, install manual dulu:
+#   pip uninstall langchain langchain-core langchain-community langchain-huggingface langchain-text-splitters -y
+#   pip install -r requirements.txt
+# ─────────────────────────────────────────────
+
+# Inti LangChain (versi harus sinkron)
+langchain==0.3.25
+langchain-core==0.3.55
+langchain-community==0.3.24
+langchain-text-splitters==0.3.8
+langchain-huggingface==0.2.0
+
+# HuggingFace
+huggingface-hub==0.30.2
+transformers==4.51.3
+sentence-transformers==3.4.1
+
+# Vector store
+faiss-cpu==1.10.0
+
+# PDF loader
+PyMuPDF==1.25.5
+
+# Frontend
+streamlit==1.45.0
+
+# Utilitas
+python-dotenv==1.1.0
+angchain-ollama
+langchain-community 
+langchain-core
